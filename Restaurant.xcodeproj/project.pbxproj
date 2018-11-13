@@ -18,6 +18,7 @@
 		3FD1F0DD219AC14900F77F6D /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F0DC219AC14900F77F6D /* OrderTableViewController.swift */; };
 		3FD1F0DF219AC1C100F77F6D /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F0DE219AC1C100F77F6D /* MenuItemDetailViewController.swift */; };
 		3FD1F0E2219AC3A200F77F6D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F0E1219AC3A200F77F6D /* MenuItem.swift */; };
+		3FD1F0E5219ACCB400F77F6D /* MenuControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F0E4219ACCB400F77F6D /* MenuControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3FD1F0DC219AC14900F77F6D /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		3FD1F0DE219AC1C100F77F6D /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		3FD1F0E1219AC3A200F77F6D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3FD1F0E4219ACCB400F77F6D /* MenuControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				3FD1F0DA219AC12D00F77F6D /* MenuTableViewController.swift */,
 				3FD1F0DC219AC14900F77F6D /* OrderTableViewController.swift */,
 				3FD1F0DE219AC1C100F77F6D /* MenuItemDetailViewController.swift */,
+				3FD1F0E4219ACCB400F77F6D /* MenuControllers.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD1F0DF219AC1C100F77F6D /* MenuItemDetailViewController.swift in Sources */,
+				3FD1F0E5219ACCB400F77F6D /* MenuControllers.swift in Sources */,
 				3FD1F0DD219AC14900F77F6D /* OrderTableViewController.swift in Sources */,
 				3FD1F0A9219AAFB000F77F6D /* AppDelegate.swift in Sources */,
 				3FD1F0E2219AC3A200F77F6D /* MenuItem.swift in Sources */,
