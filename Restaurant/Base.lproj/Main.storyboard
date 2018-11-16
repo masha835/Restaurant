@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GnR-iy-gp1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCellIdentifier" id="GnR-iy-gp1">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GnR-iy-gp1" id="8cF-7N-pLD">
@@ -119,7 +119,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="CDE-Jb-avK" kind="show" id="ATK-6b-uLV"/>
+                                    <segue destination="CDE-Jb-avK" kind="show" identifier="MenuSegue" id="ATK-6b-uLV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -161,8 +161,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="fVC-Gn-hmc" kind="relationship" relationship="viewControllers" id="H3b-HH-ZNi"/>
                         <segue destination="gTA-bG-EOX" kind="relationship" relationship="viewControllers" id="rkh-la-tD6"/>
+                        <segue destination="fVC-Gn-hmc" kind="relationship" relationship="viewControllers" id="H3b-HH-ZNi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUv-75-taj" userLabel="First Responder" sceneMemberID="firstResponder"/>
