@@ -9,9 +9,8 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
-    var menuController = MenuController()
-    let menuItem = [MenuItem]()
-
+    let menuController = MenuController()
+    var menuItems = [MenuItem]()
     var category: String!
     
     override func viewDidLoad() {
@@ -41,13 +40,13 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return menuItem.count
+        return menuItems.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier", for: indexPath)
-        let menuItem = menuItem[indexPath.row]
+        let menuItem = menuItems[indexPath.row]
         cell.textLabel?.text = menuItem.name
         
         cell.textLabel?.text = "S\(menuItem.price)"
