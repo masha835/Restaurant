@@ -47,9 +47,10 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier", for: indexPath)
         let menuItem = menuItems[indexPath.row]
-        cell.textLabel?.text = menuItem.name
         
-        cell.textLabel?.text = "S\(menuItem.price)"
+        cell.textLabel?.text = menuItem.name
+        cell.detailTextLabel?.text = "$\(Int(menuItem.price))"
+        
 
         return cell
     }
