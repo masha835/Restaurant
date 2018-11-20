@@ -55,6 +55,23 @@ class MenuTableViewController: UITableViewController {
         return cell
     }
     
+    func configure(cell: UITableViewCell, forItemAt indexPath: IndexPath) {
+        let menuItem = menuItem[indexPath.row]
+        
+        cell.textLabel?.text = menuItem.name
+        cell.dateilTextLabel?.text = String(format: "S%.2f", menuItem.prace)
+        
+        menuController.fetchImage(url: menuItem.imageURL) {
+            image in
+            
+            guard let image = image else{return}
+            DispatchQueue.main.async {
+                cell.imageView?.image = image
+            }
+            
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
