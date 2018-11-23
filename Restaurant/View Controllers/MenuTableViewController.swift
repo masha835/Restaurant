@@ -56,10 +56,10 @@ class MenuTableViewController: UITableViewController {
     }
     
     func configure(cell: UITableViewCell, forItemAt indexPath: IndexPath) {
-        let menuItem = menuItem[indexPath.row]
+        let menuItem = menuItems[indexPath.row]
         
         cell.textLabel?.text = menuItem.name
-        cell.dateilTextLabel?.text = String(format: "S%.2f", menuItem.prace)
+        cell.detailTextLabel?.text = String(format: "S%.2f", menuItem.price)
         
         menuController.fetchImage(url: menuItem.imageURL) {
             image in
@@ -108,14 +108,19 @@ class MenuTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard segue.identifier == "menuDetailSegue" else { return }
+        let viewController = segue.destination as!
+        MenuItemDetailViewController
+        
+        let index = tableView.indexPathForSelectedRow!.row
+        
+        viewController.menuItem = menuItems[index]
     }
-    */
+  
 
 }
